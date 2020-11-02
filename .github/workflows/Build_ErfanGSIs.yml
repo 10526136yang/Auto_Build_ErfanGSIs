@@ -14,7 +14,7 @@ on:
    types: [started]
    
 env:
-  ROM_URL: https://hugeota.d.miui.com/20.8.7/miui_GINKGO_20.8.7_4674224de6_10.0.zip
+  ROM_URL: https://hugeota.d.miui.com/20.11.2/miui_RAPHAEL_20.11.2_c500539247_10.0.zip
   ROM_NAME: MIUI
   TZ: Asia/Shanghai
 
@@ -61,7 +61,7 @@ jobs:
 
     - name: Clone ErfanGSI Source Code & Zip
       run: |
-        git clone --recurse-submodules https://github.com/erfanoabdi/ErfanGSIs.git
+        git clone --recurse-submodules https://github.com/yang8869/ErfanGSIs.git
         tar -Jcvf ErfanGSIs.tar.xz ErfanGSIs
         mkdir final
         cp ErfanGSIs.tar.xz final/ErfanGSIs.tar.xz
